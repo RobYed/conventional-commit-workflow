@@ -4,6 +4,8 @@ const conventionalRecommendedBump = require('conventional-recommended-bump');
 const bump                        = require('gulp-bump');
 
 
+gulp.task('release', ['bump-version', 'changelog']);
+
 gulp.task('changelog', function () {
   return gulp.src('CHANGELOG.md')
     .pipe(conventionalChangelog({
@@ -21,7 +23,7 @@ gulp.task('changelog', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('version-bump', function(done) {
+gulp.task('bump-version', function(done) {
   /**
    * Bumping version number and tagging the repository with it.
    * Please read http://semver.org/
