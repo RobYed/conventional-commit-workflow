@@ -1,0 +1,19 @@
+{
+  "name": "conventional-commit-workflow",
+  "version": "1.0.0",
+  "description": "Showcase for automatic semantic versioning and changelog creation",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobYed/conventional-commit-workflow.git"
+  },
+  "author": "Robert Dey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobYed/conventional-commit-workflow/issues"
+  },
+  "homepage": "https://github.com/RobYed/conventional-commit-workflow#readme"
+}
